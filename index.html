@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نام رستوران</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/category.css" />
+    <link rel="stylesheet" href="./styles/menu-items.css" />
+  </head>
+
+  <header>
+    <!--Hamburger Menu-->
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+      <div class="bg-dark p-2">
+        <div class="row text-body-emphasis mx-0 mb-2">
+          <button
+            type="button"
+            class="btn btn-dark border"
+            style="display: block"
+          >
+            <a href="#"></a>
+            صفحه‌ی اصلی
+          </button>
+        </div>
+        <div class="row text-body-emphasis mx-0 mb-2">
+          <button
+            type="button"
+            class="btn btn-dark border"
+            style="display: block"
+          >
+            <a href="#"></a>
+            درباره‌ی ما
+          </button>
+        </div>
+        <div class="row text-body-emphasis mx-0 mb-2">
+          <button
+            type="button"
+            class="btn btn-dark border"
+            style="display: block"
+          >
+            <a href="#"></a>
+            تماس با ما
+          </button>
+        </div>
+        <hr style="color: gainsboro; margin: 0px" />
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <p
+          style="
+            padding-top: 10px;
+            color: whitesmoke;
+            font-family: kian;
+            font-size: x-large;
+          "
+        >
+          رستوران تست
+        </p>
+        <img
+          src="./icons/restaurant-logo.png"
+          alt="restaurant logo"
+          class="img-fluid"
+          style="border-radius: 50%; width: 50px; display: inline-block"
+        />
+      </div>
+    </nav>
+    <hr style="color: gainsboro; margin: 0px" />
+  </header>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- آیتم های نو باز-->
+          <ul class="navbar-nav p-0">
+            <!--پیش غذا-->
+            <li class="nav-item">
+              <a class="nav-link" href="#appetizers">
+                <div
+                  class="row justify-content-center"
+                  style="margin-left: 10px; margin-right: 10px"
+                >
+                  <div class="col text-center">
+                    <img
+                      src="./icons/navbar-items/french-fries.png"
+                      alt=""
+                      class="d-block"
+                      style="max-width: 50px"
+                    />
+                    <p>پیش غذا</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--پیتزا-->
+            <li class="nav-item">
+              <a class="nav-link" href="#pizzas">
+                <div
+                  class="row justify-content-center"
+                  style="margin-left: 10px; margin-right: 10px"
+                >
+                  <div class="col text-center">
+                    <img
+                      src="./icons/navbar-items/pizza.png"
+                      alt=""
+                      class="d-block"
+                      style="max-width: 50px"
+                    />
+                    <p>پیتزا</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--ساندویچ-->
+            <li class="nav-item">
+              <a class="nav-link" href="#sandwiches">
+                <div
+                  class="row justify-content-center"
+                  style="margin-left: 10px; margin-right: 10px"
+                >
+                  <div class="col text-center">
+                    <img
+                      src="./icons/navbar-items/sandwich.png"
+                      alt=""
+                      class="d-block"
+                      style="max-width: 50px"
+                    />
+                    <p>ساندویچ</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--دسر-->
+            <li class="nav-item">
+              <a class="nav-link" href="#desserts">
+                <div
+                  class="row justify-content-center"
+                  style="margin-left: 10px; margin-right: 10px"
+                >
+                  <div class="col text-center">
+                    <img
+                      src="./icons/navbar-items/dessert.png"
+                      alt=""
+                      class="d-block"
+                      style="max-width: 50px"
+                    />
+                    <p>دسر</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--سالاد-->
+            <li class="nav-item">
+              <a class="nav-link" href="#salads">
+                <div
+                  class="row justify-content-center"
+                  style="margin-left: 10px; margin-right: 10px"
+                >
+                  <div class="col text-center">
+                    <img
+                      src="./icons/navbar-items/salad.png"
+                      alt=""
+                      class="d-block"
+                      style="max-width: 50px"
+                    />
+                    <p>سالاد</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--نوشیدنی-->
+            <li class="nav-item">
+              <a class="nav-link" href="#drinks">
+                <div
+                  class="row justify-content-center"
+                  style="margin-left: 10px; margin-right: 10px"
+                >
+                  <div class="col text-center">
+                    <img
+                      src="./icons/navbar-items/drinks.png"
+                      alt=""
+                      class="d-block"
+                      style="max-width: 50px"
+                    />
+                    <p>نوشیدنی</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- دسته بندی محصولات -->
+    <div class="container mt-4">
+      <!--پیش غذاها-->
+      <div id="appetizers" class="category" style="background-color: brown">
+        <!--Image Slides-->
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img
+                src="./images/Appertizes/french-fries.jpg"
+                class="d-block w-100"
+                alt="PICTURE1"
+                style="
+                  max-height: 120px;
+                  object-fit: cover;
+                  object-position: 50% 50%;
+                  border-radius: 10px;
+                "
+              />
+            </div>
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img
+                src="./images/Appertizes/mushrooms.jpg"
+                class="d-block w-100"
+                alt="PICTURE1"
+                style="
+                  max-height: 120px;
+                  object-fit: cover;
+                  object-position: 50% 50%;
+                  border-radius: 10px;
+                "
+              />
+            </div>
+          </div>
+        </div>
+        <div class="container text-center"><h3>"پیش غذا"</h3></div>
+        <!--سیب زمینی-->
+        <div class="menu-item">
+          <div class="row">
+            <div class="col-3 col-xs-4">
+              <img
+                src="/images/Appertizes/french-fries.jpg"
+                alt="french fries"
+                class="img-thumbnail img-fluid"
+              />
+            </div>
+            <div class="col">
+              <h5>سیب زمینی</h5>
+              <p>مواد مورد استفاده...</p>
+            </div>
+          </div>
+        </div>
+        <!--قارچ سوخاری-->
+        <div class="menu-item">
+          <div class="row">
+            <div class="col-3 col-xs-4">
+              <img
+                src="/images/Appertizes/mushrooms.jpg"
+                alt="french fries"
+                class="img-thumbnail img-fluid"
+              />
+            </div>
+            <div class="col">
+              <h5>قارچ سوخاری</h5>
+              <p>مواد مورد استفاده...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--پیتتزاها-->
+      <div
+        id="pizzas"
+        class="category"
+        style="background-color: rgb(203, 92, 12)"
+      >
+        <!--Image Slides-->
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img
+                src="./images/Pizzas/chicken-pizza.jpg"
+                class="d-block w-100"
+                alt="PICTURE1"
+                style="
+                  max-height: 120px;
+                  object-fit: cover;
+                  object-position: 50% 50%;
+                  border-radius: 10px;
+                "
+              />
+            </div>
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img
+                src="./images/Pizzas/pepperoni.jpeg"
+                class="d-block w-100"
+                alt="PICTURE1"
+                style="
+                  max-height: 120px;
+                  object-fit: cover;
+                  object-position: 50% 50%;
+                  border-radius: 10px;
+                "
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="container text-center"><h3>"پیتزا"</h3></div>
+        <!--پیتزای ۱-->
+        <div class="menu-item">
+          <div class="row">
+            <div class="col-3 col-xs-4">
+              <img
+                src="/images/Pizzas/chicken-pizza.jpg"
+                alt="french fries"
+                class="img-thumbnail img-fluid"
+              />
+            </div>
+            <div class="col">
+              <h5>پیتزای مرغ</h5>
+              <p>مواد مورد استفاده...</p>
+            </div>
+          </div>
+        </div>
+        <!--پیتزای ۲-->
+        <div class="menu-item">
+          <div class="row">
+            <div class="col-3 col-xs-4">
+              <img
+                src="/images/Pizzas/pepperoni.jpeg"
+                alt="french fries"
+                class="img-thumbnail img-fluid"
+              />
+            </div>
+            <div class="col">
+              <h5>پیتزا پپرونی</h5>
+              <p>مواد مورد استفاده...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--ساندویچ ها-->
+      <div
+        id="sandwiches"
+        class="category"
+        style="background-color: rgb(248, 114, 65)"
+      >
+        <!--Image Slides-->
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img
+                src="./images/Sandwhiches/chicken-burger.jpg"
+                class="d-block w-100"
+                alt="PICTURE1"
+                style="
+                  max-height: 120px;
+                  object-fit: cover;
+                  object-position: 50% 50%;
+                  border-radius: 10px;
+                "
+              />
+            </div>
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img
+                src="./images/Sandwhiches/hamburger.jpg"
+                class="d-block w-100"
+                alt="PICTURE1"
+                style="
+                  max-height: 120px;
+                  object-fit: cover;
+                  object-position: 50% 50%;
+                  border-radius: 10px;
+                "
+              />
+            </div>
+          </div>
+        </div>
+        <div class="container text-center"><h3>"ساندویچ"</h3></div>
+        <!--ساندویج ۱-->
+        <div class="menu-item">
+          <div class="row">
+            <div class="col-3 col-xs-4">
+              <img
+                src="/images/Sandwhiches/chicken-burger.jpg"
+                alt="chicken-sandwich"
+                class="img-thumbnail img-fluid"
+              />
+            </div>
+            <div class="col">
+              <h5>ساندویچ مرغ</h5>
+              <p>مواد مورد استفاده...</p>
+            </div>
+          </div>
+        </div>
+        <!--ساندویچ ۲-->
+        <div class="menu-item">
+          <div class="row">
+            <div class="col-3 col-xs-4">
+              <img
+                src="/images/Sandwhiches/hamburger.jpg"
+                alt="hamburger"
+                class="img-thumbnail img-fluid"
+              />
+            </div>
+            <div class="col">
+              <h5>همبرگر</h5>
+              <p>مواد مورد استفاده...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--دسرها-->
+      <div
+        id="desserts"
+        class="category"
+        style="background-color: rgb(211, 211, 0)"
+      >
+        <!--Image Slides-->
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img
+                src="./images/Desserts/dessert1.jpg"
+                class="d-block w-100"
+                alt="PICTURE1"
+                style="
+                  max-height: 120px;
+                  object-fit: cover;
+                  object-position: 50% 50%;
+                  border-radius: 10px;
+                "
+              />
+            </div>
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img
+                src="./images/Desserts/dessert2.jpg"
+                class="d-block w-100"
+                alt="PICTURE1"
+                style="
+                  max-height: 120px;
+                  object-fit: cover;
+                  object-position: 50% 50%;
+                  border-radius: 10px;
+                "
+              />
+            </div>
+          </div>
+        </div>
+        <div class="container text-center"><h3>"دسر"</h3></div>
+        <!--دسر ۱-->
+        <div class="menu-item">
+          <div class="row">
+            <div class="col-3 col-xs-4">
+              <img
+                src="/images/Desserts/dessert1.jpg"
+                alt="dessert1"
+                class="img-thumbnail img-fluid"
+              />
+            </div>
+            <div class="col">
+              <h5>دسر شماره ۱</h5>
+              <p>مواد مورد استفاده...</p>
+            </div>
+          </div>
+        </div>
+        <!--ساندویچ ۲-->
+        <div class="menu-item">
+          <div class="row">
+            <div class="col-3 col-xs-4">
+              <img
+                src="/images/Desserts/dessert2.jpg"
+                alt="dessert2"
+                class="img-thumbnail img-fluid"
+              />
+            </div>
+            <div class="col">
+              <h5>کیک شکلاتی</h5>
+              <p>مواد مورد استفاده...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--سالادها-->
+      <div id="salads" class="category" style="background-color: rgb(1, 98, 1)">
+        <!--Image Slides-->
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img
+                src="./images/Salads/caesar-salad.jpg"
+                class="d-block w-100"
+                alt="PICTURE1"
+                style="
+                  max-height: 120px;
+                  object-fit: cover;
+                  object-position: 50% 50%;
+                  border-radius: 10px;
+                "
+              />
+            </div>
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img
+                src="./images/Salads/garden-salad.jpg"
+                class="d-block w-100"
+                alt="PICTURE1"
+                style="
+                  max-height: 120px;
+                  object-fit: cover;
+                  object-position: 50% 50%;
+                  border-radius: 10px;
+                "
+              />
+            </div>
+          </div>
+        </div>
+        <div class="container text-center"><h3>"سالاد"</h3></div>
+        <!--سالاد ۱-->
+        <div class="menu-item">
+          <div class="row">
+            <div class="col-3 col-xs-4">
+              <img
+                src="/images/Salads/garden-salad.jpg"
+                alt="garden salad"
+                class="img-thumbnail img-fluid"
+              />
+            </div>
+            <div class="col">
+              <h5>سالاد گاردن</h5>
+              <p>مواد مورد استفاده...</p>
+            </div>
+          </div>
+        </div>
+        <!--سالاد ۲-->
+        <div class="menu-item">
+          <div class="row">
+            <div class="col-3 col-xs-4">
+              <img
+                src="/images/Salads/caesar-salad.jpg"
+                alt="caesar salad"
+                class="img-thumbnail img-fluid"
+              />
+            </div>
+            <div class="col">
+              <h5>سالاد سزار</h5>
+              <p>مواد مورد استفاده...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--نوشیدنی ها-->
+      <div
+        id="drinks"
+        class="category"
+        style="background-color: rgb(137, 0, 114)"
+      >
+        <!--Image Slides-->
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img
+                src="./images/Drinks/coca-cola.jpg"
+                class="d-block w-100"
+                alt="PICTURE1"
+                style="
+                  max-height: 120px;
+                  object-fit: cover;
+                  object-position: 50% 50%;
+                  border-radius: 10px;
+                "
+              />
+            </div>
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img
+                src="./images/Drinks/pepsi.jpg"
+                class="d-block w-100"
+                alt="PICTURE2"
+                style="
+                  max-height: 120px;
+                  object-fit: cover;
+                  object-position: 50% 50%;
+                  border-radius: 10px;
+                "
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="container text-center"><h3>"نوشیدنی"</h3></div>
+        <!--نوشیدنی ۱-->
+        <div class="menu-item">
+          <div class="row">
+            <div class="col-3 col-xs-4">
+              <img
+                src="/images/Drinks/coca-cola.jpg"
+                alt="coca cola"
+                class="img-thumbnail img-fluid"
+              />
+            </div>
+            <div class="col">
+              <h5>کوکاکولا</h5>
+            </div>
+          </div>
+        </div>
+        <!--نوشیدنی ۲-->
+        <div class="menu-item">
+          <div class="row">
+            <div class="col-3 col-xs-4">
+              <img
+                src="/images/Drinks/pepsi.jpg"
+                alt="french fries"
+                class="img-thumbnail img-fluid"
+              />
+            </div>
+            <div class="col">
+              <h5>پپسی</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  <footer>
+    <div
+      class="container bg-dark text-center"
+      style="
+        height: 60px;
+        width: 100%;
+        border-top: 2px;
+        border-color: black;
+        padding-top: 25px;
+        margin-top: 45px;
+      "
+    >
+      <p
+        style="
+          color: whitesmoke;
+          font-family: b-nazanin;
+          font-size: medium;
+          margin: 0px;
+        "
+      >
+        Designed By SHAYAN HADAD
+      </p>
+    </div>
+  </footer>
+</html>

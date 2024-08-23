@@ -1,0 +1,28 @@
+@font-face {
+  font-family: b-nazanin;
+  src: url(../fonts/B_Nazanin.ttf);
+}
+@font-face {
+  font-family: harmattan;
+  src: url(../fonts/Harmattan/Harmattan-Medium.ttf);
+}
+@font-face {
+  font-family: kian;
+  src: url(../fonts/Digi\ Kian\ Grunge\ Bold.ttf);
+}
+body {
+  background-color: #d7dce1;
+  direction: rtl;
+}
+p {
+  font-family: b-nazanin;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+h5 {
+  font-family: harmattan;
+}
+h3 {
+  font-family: kian;
+  font-size: xx-large;
+}
